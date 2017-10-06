@@ -1,0 +1,26 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Rbnode	rbtree.h	/^struct Rbnode {$/;"	s
+color	rbtree.h	/^    int color; \/\/ 0:red 1:balck$/;"	m	struct:Rbnode
+key	rbtree.h	/^    int key;$/;"	m	struct:Rbnode
+left	rbtree.h	/^    struct Rbnode* left;$/;"	m	struct:Rbnode	typeref:struct:Rbnode::Rbnode
+left_rotate	rbrotate.c	/^void left_rotate(struct Rbnode** root, struct Rbnode* x) {$/;"	f
+main	main.c	/^int main() {$/;"	f
+parent	rbtree.h	/^    struct Rbnode* parent;$/;"	m	struct:Rbnode	typeref:struct:Rbnode::Rbnode
+rb_delete	rbdelete.c	/^void rb_delete(struct Rbnode** root, struct Rbnode* z) {$/;"	f
+rb_delete_fixup2	rbdelete_fixup.c	/^void rb_delete_fixup2(struct Rbnode** root, struct Rbnode* y, int child) {$/;"	f
+rb_insert	rbinsert.c	/^void rb_insert(struct Rbnode** root, struct Rbnode* z) {$/;"	f
+rb_insert_fixup	rbinsert_fixup.c	/^void rb_insert_fixup(struct Rbnode** root, struct Rbnode* z) {$/;"	f
+rb_maxmum	rbquery.c	/^struct Rbnode* rb_maxmum(struct Rbnode* x) {$/;"	f
+rb_minimum	rbquery.c	/^struct Rbnode* rb_minimum(struct Rbnode* x) {$/;"	f
+rb_predecessor	rbquery.c	/^struct Rbnode* rb_predecessor(struct Rbnode* x) {$/;"	f
+rb_successor	rbquery.c	/^struct Rbnode* rb_successor(struct Rbnode* x) {$/;"	f
+rb_transplant	rbtransplant.c	/^void rb_transplant(struct Rbnode** root, struct Rbnode* u, struct Rbnode* v) {$/;"	f
+rbprint_node	rbprint.c	/^void rbprint_node(struct Rbnode* node) {$/;"	f
+rbprint_root	rbprint.c	/^void rbprint_root(struct Rbnode* root) {$/;"	f
+right	rbtree.h	/^    struct Rbnode* right;$/;"	m	struct:Rbnode	typeref:struct:Rbnode::Rbnode
+right_rotate	rbrotate.c	/^void right_rotate(struct Rbnode** root, struct Rbnode* y) {$/;"	f
