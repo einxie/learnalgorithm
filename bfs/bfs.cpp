@@ -8,7 +8,7 @@ Bfs::Bfs(int (*m_edges)[VERTEX_LENGTH]) {
         return;
     }
     for(int i = 0; i < VERTEX_LENGTH; i++) {
-        struct Vertex vertex;
+        Vertex vertex;
         vertex.index = i;
         vertex.color = VERTEX_WHITE;
         vertex.distance = 0;
@@ -29,7 +29,7 @@ void Bfs::GenerateBfsGraph(int index) {
     vertexes[index].color = VERTEX_GRAY;
     vertex_queue.push(vertexes[index]);
     while(!vertex_queue.empty()) {
-        struct Vertex vertex = vertex_queue.front();
+        Vertex vertex = vertex_queue.front();
         vertex_queue.pop();
         for(int j = 0; j < VERTEX_LENGTH; j++) {
             if(edges[vertex.index][j] > 0) {

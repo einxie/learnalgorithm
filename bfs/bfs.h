@@ -9,7 +9,7 @@ struct Vertex {
     int index;
     int color;
     int distance;
-    struct Vertex* parent;
+    Vertex* parent;
 };
 
 class Bfs {
@@ -21,8 +21,8 @@ public:
     void PrintBfsGraph();
 
 private:
-    std::queue<struct Vertex> vertex_queue;
-    struct Vertex vertexes[VERTEX_LENGTH];
+    std::queue<Vertex> vertex_queue;
+    Vertex vertexes[VERTEX_LENGTH];
     int edges[VERTEX_LENGTH][VERTEX_LENGTH];
 };
 
