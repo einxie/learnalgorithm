@@ -3,7 +3,7 @@
 using namespace std;
 
 enum {VERTEX_WHITE, VERTEX_GRAY, VERTEX_BLACK};
-static const int VERTEX_LENGTH = 5;
+static const int VERTEX_LENGTH = 8;
 
 struct Vertex {
     int index;
