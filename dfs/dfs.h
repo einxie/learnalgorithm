@@ -1,6 +1,3 @@
-#include <queue>
-
-using namespace std;
 
 enum {VERTEX_WHITE, VERTEX_GRAY, VERTEX_BLACK};
 static const int VERTEX_LENGTH = 5;
@@ -9,21 +6,22 @@ struct Vertex {
     int index;
     int color;
     int distance;
+	int ftime;
     Vertex* parent;
 };
 
-class Bfs {
+class Dfs {
 public:
-    Bfs(int (*m_edges)[VERTEX_LENGTH]);
-    ~Bfs();
+    Dfs(int (*m_edges)[VERTEX_LENGTH]);
+    ~Dfs();
 
-    void GenerateBfsGraph();
-    void BfsVisit(int index);
-    void PrintBfsGraph();
+    void GenerateDfsGraph();
+	void DfsVisit(int index);
+    void PrintDfsGraph();
 
 private:
-    std::queue<Vertex> vertex_queue;
     Vertex vertexes[VERTEX_LENGTH];
     int edges[VERTEX_LENGTH][VERTEX_LENGTH];
+	int visit_time;
 };
 

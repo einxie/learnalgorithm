@@ -9,6 +9,6 @@ int main() {
 		{1, 1, 0, 1, 0}
 	};
 	Bfs bfs(test_vetex);
-	bfs.GenerateBfsGraph(0);
+	bfs.GenerateBfsGraph();
 	bfs.PrintBfsGraph();
 }

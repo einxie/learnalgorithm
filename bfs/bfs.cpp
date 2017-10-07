@@ -22,7 +22,11 @@ Bfs::Bfs(int (*m_edges)[VERTEX_LENGTH]) {
 
 Bfs::~Bfs() {}
 
-void Bfs::GenerateBfsGraph(int index) {
+void Bfs::GenerateBfsGraph() {
+    BfsVisit(0);
+}
+
+void Bfs::BfsVisit(int index) {
     if(index < 0 || index >= VERTEX_LENGTH) {
         return;
     }
