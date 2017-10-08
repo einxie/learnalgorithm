@@ -9,8 +9,6 @@ using std::list;
 
 struct Vertex {
     int index;
-    int color;
-    int distance;
     Vertex* parent;
 };
 

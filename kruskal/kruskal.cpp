@@ -8,8 +8,6 @@ Kruskal::Kruskal(int (*m_edges)[VERTEX_LENGTH]) {
     for(int i = 0; i < VERTEX_LENGTH; i++) {
         Vertex vertex;
         vertex.index = i;
-        vertex.color = VERTEX_WHITE;
-        vertex.distance = 0;
         vertex.parent = 0;
         vertexes[i] = vertex;
         for(int j = 0; j < VERTEX_LENGTH; j++) {

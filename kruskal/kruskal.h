@@ -7,7 +7,6 @@
 using std::priority_queue;
 
 static const int VERTEX_LENGTH = 9;
-enum {VERTEX_WHITE, VERTEX_GRAY, VERTEX_BLACK};
 
 struct Edge {
     int index_u;
