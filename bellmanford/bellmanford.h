@@ -34,12 +34,11 @@ public:
 	
 	bool bellman_ford_process();
 	void bellman_ford_print();
-	void relex(Vertex vertex_1, Vertex vertex_2);
+	void relex(Edge edge);
 	
 private:
     Vertex vertexes[VERTEX_LENGTH];
-	vector<Edge> spath;
-    int edges[VERTEX_LENGTH][VERTEX_LENGTH];
+	vector<Edge> edges;
 };
 
 #endif
